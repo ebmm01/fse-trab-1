@@ -48,11 +48,9 @@ int send_message_to_uart(int solicitation_command) {
     
     *p_tx_buffer++ = ARDUINO_ADRESS;
 
-    // FIXO em solicitar um inteiro. TODO
     // Código da função
     *p_tx_buffer++ = ARDUINO_CODE;
 
-    // FIXO em solicitar um inteiro. TODO
     // Dados a serem enviados
     *p_tx_buffer++ = solicitation_command;
     
@@ -107,6 +105,7 @@ float receive_temperature() {
             }
         }
     }
+    return -1;
 }
 
 float get_temp(int temp_type) {

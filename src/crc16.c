@@ -55,7 +55,7 @@ short calcula_CRC(unsigned char *commands, int size) {
 }
 
 int validate_CRC(unsigned char *commands, int size) {
-    char copy[18];
+    unsigned char copy[18];
     short generatedCRC, receivedCRC;
 
     memcpy(&receivedCRC, commands + (size - 2), 2);
