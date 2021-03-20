@@ -6,15 +6,15 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <pthread.h>
-#include "crc16.h"
 #include "uart.h"
+#include "csv.h"
 #include "gpio.h"
 #include "i2cbme.h"
 #include "pid.h"
 #include "i2clcd.h"
-#include "csv.h"
 #include "menu.h"
 #include "update_temp.h"
+#include <curses.h>
 
 void handle_temperature_by_signal_control(float signal_control);
 void handle_init();
@@ -51,6 +51,7 @@ void handle_init() {
 
 void handle_close() {
     printf("\nEncerrando execução...\n");
+    endwin();
     pthread_cancel(thread);
     write_on_lcd("", "");
     set_resistor_intensity(0);

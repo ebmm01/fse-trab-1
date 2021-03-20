@@ -28,10 +28,6 @@ void* execute_menu() {
 
     box(field, 0, 0);
     box(score, 0, 0);
-    
-    mvwprintw(field, 0, 1, "Leituras");
-    mvwprintw(score, 1, 1, "Modo de seleção de temperatura de referência:");
-    mvwprintw(score, 4, 1, "Temperatura manual selecionada (aperte + ou - para alterar):");
 
     while(1) {
 
@@ -87,7 +83,10 @@ void* execute_menu() {
                 break;
         }
 
-        
+        mvwprintw(field, 0, 2, "Leituras");
+        mvwprintw(score, 0, 2, "Menu");
+        mvwprintw(score, 1, 1, "Modo de seleção de temperatura de referência:");
+        mvwprintw(score, 4, 1, "Temperatura manual selecionada (aperte + ou - para alterar):");
         mvwprintw(field, 1, 53, "                 ");
         mvwprintw(field, 1, 1, "Modo de tempereratura de Referencia atual----------- %s", choices[highlight]);
         mvwprintw(field, 2, 1, "Temperatura interna -------------------------------- %.2f ºC", internal_temp);
@@ -105,6 +104,4 @@ void* execute_menu() {
         
         usleep(10000);
     }
-
-    endwin();
 }
