@@ -45,9 +45,18 @@ Para encerrar o programa, apenas aperte __ctrl+c__. O programa irá capturar o s
 ## Resultado do experimento
 
 O resultado do experimento pode ser visualizado nos gráficos abaixo:
+Legendas: 
 
-Temperaturas vs tempo
+- ti = __Temperatura interna__, em ºC;
+- te = __Temperatura externa__, em ºC;
+- td = __Temperatura definida pelo usuário__ (potenciômetro ou manual), em ºC;
+- fan = Valor de acionamento da __ventoínha__, em percentagem;
+- resistor = Valor de acionamento do __resistor__, em percentagem.
+
+Temperaturas vs tempo (onde td veio do potenciômetro nesse gráfico):
+
 ![](./assets/temp.png)
 
 Resistor & ventoínha vs tempo
+
 ![](./assets/resis.png)
