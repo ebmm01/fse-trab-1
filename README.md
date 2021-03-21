@@ -1,7 +1,8 @@
 ## Projeto 1 - 2020/2 - FSE
 
 __Aluno__: Elias Bernardo Marques Magalhães
-__Matrícula__: 150/009011
+
+__Matrícula__: 15-0009011
 
 Este trabalho tem por objetivo a implementação do controle de temperatura de um sistema que possui internamente dois dispositivos para alterar sua temperatura. O primeiro é um resistor de potência de 15 Watts utilziado para aumentar temperatura e o segundo, uma ventoinha que puxa o ar externo (à temperatura ambiente) para reduzir a temperatura.
 
@@ -40,7 +41,7 @@ Durante a execução do programa, um arquivo de logs no formato CSV é atualizad
 
 > O CSV fica na pasta raiz, nomeado como __data.csv__
 
-Para encerrar o programa, apenas aperte __ctrl+c__. O programa irá capturar o sinal sigint e fechar algumas conexões, desligar o resistor e a ventoínha além de cancelar a trhead do menu.
+Para encerrar o programa, apenas aperte __ctrl+c__. O programa irá capturar o sinal sigint e fechar algumas conexões, desligar o resistor e a ventoínha além de cancelar a thread do menu.
 
 ## Resultado do experimento
 
